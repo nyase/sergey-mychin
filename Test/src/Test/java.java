@@ -13,7 +13,7 @@ public class java {
     /**
      * @param args the command line arguments
      */
-    public static void main(int [] args) {
+    public static void main(Float [] args) {
         // TODO code application logic here
         
         
