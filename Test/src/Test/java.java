@@ -1,41 +1,14 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Test;
 
-/**
- *
- * @author Администратор
- */
+import java.io.IOException;
+
 public class java {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(int [] args) {
-        // TODO code application logic here
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    }Борзов!!!!
+    public static void main(String [] args) throws IOException {
+      Calck x = new Calck();
+      x.setOne();
+      x.setTwo();
+      x.Calc(0);
+      
+    }
 }
