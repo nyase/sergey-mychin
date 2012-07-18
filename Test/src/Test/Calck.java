@@ -56,13 +56,15 @@ public class Calck {
        while (i == true) {
         System.out.println("Введите необходимый оператор");
         String z = read();
-         if ((!"-".equals(z)) || (!"+".equals(z)) | (!"*".equals(z)) | (!"/".equals(z))) { 
-             this.znak = z;
+         if ((("-".equals(z)) || ("+".equals(z)) || ("*".equals(z)) || ("/".equals(z)))) { 
+            this.znak = z;
              i = false;
+            System.out.println("Это не оператор!!!");
          }
           
                   else {
-            System.out.println("Это не оператор!!!");}
+    System.out.println("Это не оператор!!!");
+             }
 //            }
     }
 }
