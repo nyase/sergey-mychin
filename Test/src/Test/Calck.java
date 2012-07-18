@@ -10,20 +10,23 @@ public class Calck {
     private int two;
     private int result;
 
-    public void setOne() throws IOException {
+    private String read() throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         String str = input.readLine();
-        int x = Integer.parseInt(str);
+        return str;
+    }
+
+    public void setOne() throws IOException {
+        int x = Integer.parseInt(read());
         this.one = x;
-//        System.out.println(one);
+
     }
 
     public void setTwo() throws IOException {
-        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-        String str = input.readLine();
-        int x = Integer.parseInt(str);
+
+        int x = Integer.parseInt(read());
         this.two = x;
-//        System.out.println(two);
+
     }
 
     public int Calc(int result) {
