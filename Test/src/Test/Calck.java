@@ -56,12 +56,12 @@ public class Calck {
         while (i == true) {
             System.out.println("Введите необходимый оператор");
             String z = read();
-            if ((!"-".equals(z)) | (!"+".equals(z)) | (!"*".equals(z)) | (!"/".equals(z)){
-                System.out.println("Это не оператор!!!");
-            } else {
+            if ((("-".equals(z)) || ("+".equals(z)) || ("*".equals(z)) || ("/".equals(z)))) {
                 this.znak = z;
                 i = false;
+            } else {
+                System.out.println("Это не оператор!!!");
             }
-            }
-    }
         }
+    }
+}
