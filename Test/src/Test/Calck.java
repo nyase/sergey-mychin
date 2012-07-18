@@ -1,6 +1,9 @@
 package Test;
 /**
  *Это заебись это пиздато ахуено, барсаход 3000
+ * 
+ * 
+ * КАБАНЫ СТОЛОНЕ КАРП
  */
 
 import java.io.BufferedReader;
