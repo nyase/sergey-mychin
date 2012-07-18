@@ -9,6 +9,7 @@ public class Calck {
     private int one;
     private int two;
     private int result;
+    private String znak;
 
     private String read() throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -17,21 +18,40 @@ public class Calck {
     }
 
     public void setOne() throws IOException {
+        System.out.println("Введите первое число");
         int x = Integer.parseInt(read());
         this.one = x;
-
     }
 
     public void setTwo() throws IOException {
-
+        System.out.println("Введите второе число");
         int x = Integer.parseInt(read());
         this.two = x;
-
     }
 
     public int Calc(int result) {
-        result = this.one + this.two;
+
+        if ("+".equals(znak)) {
+            result = this.one + this.two;
+        } else if ("-".equals(znak)) {
+            result = this.one - this.two;
+        } else if ("*".equals(znak)) {
+            result = this.one * this.two;
+        } else if ("/".equals(znak)) {
+            result = this.one / this.two;
+        }
+
         System.out.println(result);
         return result;
+    }
+
+    public void setZnak() throws IOException {
+        System.out.println("Введите необходимый оператор");
+        String z = read();
+        if (!"-".equals(z) || !"+".equals(z) || !"*".equals(z) || !"/".equals(z)) {
+            System.out.println("Это не оператор");
+            
+        }
+        this.znak = z;
     }
 }
