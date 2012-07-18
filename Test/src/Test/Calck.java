@@ -46,12 +46,17 @@ public class Calck {
     }
 
     public void setZnak() throws IOException {
-        System.out.println("Введите необходимый оператор");
-        String z = read();
-        if (!"-".equals(z) || !"+".equals(z) || !"*".equals(z) || !"/".equals(z)) {
-            System.out.println("Это не оператор");
-            
+        boolean i = true;
+        while (i == true) {
+            System.out.println("Введите необходимый оператор");
+            String z = read();
+            if (!"-".equals(z) || !"+".equals(z) || !"*".equals(z) || !"/".equals(z)) {
+                System.out.println("Это не оператор!!!");
+            } else {
+                this.znak = z;
+                i = false;
+            }
         }
-        this.znak = z;
+
     }
 }
