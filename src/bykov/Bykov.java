@@ -17,7 +17,7 @@ public class Bykov {
      */
     public static void main(String[] args) throws IOException {
       chel Chel = new chel ();
-      Chel.name();
+      Chel.name("");
       Chel.go();
       
     }

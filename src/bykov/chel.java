@@ -18,16 +18,21 @@ public class chel {
     public int rost;
     public int ves;
 
-    public void name() throws IOException {
-        System.out.println("Представся друк");
-        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-        
-        name = input.readLine();
-        if (name == null) {
-            System.out.println("Наебать решил меня");
+    public void name(String name) throws IOException {
+        boolean i = true;
+        while (i == true) {
+            System.out.println("Представся друк");
+            BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+
+            name = input.readLine();
+            if ("".equals(name)) {
+                System.out.println("Наебать решил меня");
+            } else {
+                this.name = name;
+                i = false;
+            }
         }
-        
-    }
+
 
     }
 
@@ -44,5 +49,4 @@ public class chel {
     public void est() {
         System.out.println("Я ем");
     }
-
-    }
+}
